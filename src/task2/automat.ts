@@ -62,10 +62,6 @@ export async function issuePass(
    }
 
    const id = new URL(location, url).pathname.split('/').filter(Boolean).pop();
-   if (!id || !/^[\w-]+$/.test(id)) {
-      throw new Error(`Incorrect id: ${location}`);
-   }
-
    const png = Buffer.from(await res.arrayBuffer());
    await writeFile(`${id}.png`, png);
 }
