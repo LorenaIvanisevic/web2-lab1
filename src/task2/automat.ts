@@ -1,4 +1,6 @@
 import { writeFile } from 'node:fs/promises';
+import { Buffer } from 'node:buffer';
+
 
 export async function getToken(
    authority: string,

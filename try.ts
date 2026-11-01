@@ -10,7 +10,7 @@ async function main() {
     'create:passes'
   );
   console.log(token);
-  await issuePass('http://localhost:3000/passes', token, 'aaaa', 'HR-123456789');
+  await issuePass('https://web2-lab1-qtnb.onrender.com/passes', token, 'aaaa', 'HR-123456789');
   }
 
 main().catch((e) => {
